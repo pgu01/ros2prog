@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Modern Search Engine</title>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        fontFamily: {
+                            sans: ['IBM Plex Sans', 'sans-serif'],
+                        },
+                    }
+                }
+            }
+        </script>
+    </head>
+<body class="bg-gray-100 min-h-screen">
+    <header class="bg-black shadow-md">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex items-center justify-between mb-4">
+                <h1 class="text-3xl font-bold text-white">Engine</h1>
+                <nav>
+                    <a href="#" class="text-white hover:text-blue-600 mx-2">Sign In</a>
+                    <a href="#" class="text-white hover:text-blue-600 mx-2">Settings</a>
+                </nav>
+            </div>
+            
+            <form class="flex items-center">
+                <div class="relative">
+                    <select class="appearance-none bg-white border border-white-300 text-black py-3 px-4 pr-8 rounded-l-full focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent text-lg">
+                        <option>All</option>
+                        <option>Images</option>
+                        <option>Videos</option>
+                        <option>News</option>
+                    </select>
+                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
+                        </svg>
+                    </div>
+                </div>
+                <input type="text" placeholder="Search the web..." 
+                       class="w-full text-black py-3 px-4 pr-8 rounded-r-full border-l border-gray-200 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent shadow-sm text-xl">
+                <button type="submit" class="bg-red-600 text-white rounded-full p-3 ml-2 hover:bg-red-800 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </header>
+
+    <main class="container mx-auto mt-8 px-4">
+        <section class="mb-8">
+            <div class="grid grid-cols-2 md:grid-cols-2 gap-4">
+                <a href="#" class="bg-white p-4 rounded shadow hover:shadow-md transition">
+                    <h3 class="font-semibold">Technology</h3>
+                    <p class="text-sm text-gray-600">Latest gadgets and innovations</p>
+                </a>
+                <a href="#" class="bg-white p-4 rounded shadow hover:shadow-md transition">
+                    <h3 class="font-semibold">Science</h3>
+                    <p class="text-sm text-gray-600">Discoveries and research</p>
+                </a>
+                <a href="#" class="bg-white p-4 rounded shadow hover:shadow-md transition">
+                    <h3 class="font-semibold">Health</h3>
+                    <p class="text-sm text-gray-600">Wellness and medical advances</p>
+                </a>
+                <a href="#" class="bg-white p-4 rounded shadow hover:shadow-md transition">
+                    <h3 class="font-semibold">Entertainment</h3>
+                    <p class="text-sm text-gray-600">Movies, music, and more</p>
+                </a>
+                <a href="#" class="bg-white p-4 rounded shadow hover:shadow-md transition">
+                    <h3 class="font-semibold">Technology</h3>
+                    <p class="text-sm text-gray-600">Latest gadgets and innovations</p>
+                </a>
+                <a href="#" class="bg-white p-4 rounded shadow hover:shadow-md transition">
+                    <h3 class="font-semibold">Science</h3>
+                    <p class="text-sm text-gray-600">Discoveries and research</p>
+                </a>
+                <a href="#" class="bg-white p-4 rounded shadow hover:shadow-md transition">
+                    <h3 class="font-semibold">Health</h3>
+                    <p class="text-sm text-gray-600">Wellness and medical advances</p>
+                </a>
+                <a href="#" class="bg-white p-4 rounded shadow hover:shadow-md transition">
+                    <h3 class="font-semibold">Entertainment</h3>
+                    <p class="text-sm text-gray-600">Movies, music, and more</p>
+                </a>
+            </div>
+            <nav aria-label="Page navigation" class="mt-8">
+                <ul class="inline-flex items-center -space-x-px mtx-auto">
+                    <li>
+                        <a href="#" class="block px-3 py-2 ml-0 leading-tight text-gray-500 bg-white border border-gray-300 rounded-l-lg hover:bg-gray-100 hover:text-gray-700">
+                            <span class="sr-only">Previous</span>
+                            <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" aria-current="page" class="z-10 px-3 py-2 leading-tight text-blue-600 border border-blue-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700">1</a>
+                    </li>
+                    <li>
+                        <a href="#" class="px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700">2</a>
+                    </li>
+                    <li>
+                        <a href="#" class="px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700">3</a>
+                    </li>
+                    <li>
+                        <span class="px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300">...</span>
+                    </li>
+                    <li>
+                        <a href="#" class="px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700">10</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 rounded-r-lg hover:bg-gray-100 hover:text-gray-700">
+                            <span class="sr-only">Next</span>
+                            <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </main>
+    
+<!-- 
+    <footer class="bg-gray-800 text-white py-4 mt-12">
+        <div class="container mx-auto my-auto px-4 text-center">
+            <p>&copy; 2024 SearchWave. All rights reserved.</p>
+            <div class="mt-2">
+                <a href="#" class="hover:underline mx-2">Contact Us</a>
+            </div>
+        </div>
+    </footer> -->
+</body>
+</html>
